@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10252083019771A7E4E4A692 /* Pods_Keepjogging_KeepjoggingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2492843ED64A5339582CE543 /* Pods_Keepjogging_KeepjoggingUITests.framework */; };
+		2038B45327ECD577002807D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B45227ECD577002807D8 /* AppDelegate.swift */; };
+		2038B45527ECD577002807D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B45427ECD577002807D8 /* SceneDelegate.swift */; };
+		2038B45A27ECD577002807D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2038B45827ECD577002807D8 /* Main.storyboard */; };
+		2038B45C27ECD578002807D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2038B45B27ECD578002807D8 /* Assets.xcassets */; };
+		2038B45F27ECD578002807D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2038B45D27ECD578002807D8 /* LaunchScreen.storyboard */; };
+		2038B46A27ECD578002807D8 /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B46927ECD578002807D8 /* InstagramTests.swift */; };
+		2038B47427ECD578002807D8 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B47327ECD578002807D8 /* InstagramUITests.swift */; };
+		2038B47627ECD578002807D8 /* InstagramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B47527ECD578002807D8 /* InstagramUITestsLaunchTests.swift */; };
+		2038B48327ECDAE6002807D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B48227ECDAE6002807D8 /* LoginViewController.swift */; };
+		2038B48527ECDAF4002807D8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B48427ECDAF4002807D8 /* FeedViewController.swift */; };
+		2038B48727ECF255002807D8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B48627ECF255002807D8 /* CameraViewController.swift */; };
+		2038B48927ECFF70002807D8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B48827ECFF70002807D8 /* PostCell.swift */; };
+		206105E727F41FE300C98D58 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206105E627F41FE300C98D58 /* CommentCell.swift */; };
+		2B9809DD42EB9F1E267EDC61 /* Pods_KeepjoggingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671FEB598C594201A9C7D142 /* Pods_KeepjoggingTests.framework */; };
+		B4321F982F80FEDFD6E5937D /* Pods_Keepjogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13578D4059A27D32E8379B66 /* Pods_Keepjogging.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2038B46627ECD578002807D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2038B44727ECD576002807D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2038B44E27ECD576002807D8;
+			remoteInfo = Instagram;
+		};
+		2038B47027ECD578002807D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2038B44727ECD576002807D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2038B44E27ECD576002807D8;
+			remoteInfo = Instagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C00EF57F169DB9483B3F39 /* Pods-Keepjogging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keepjogging.release.xcconfig"; path = "Target Support Files/Pods-Keepjogging/Pods-Keepjogging.release.xcconfig"; sourceTree = "<group>"; };
+		13578D4059A27D32E8379B66 /* Pods_Keepjogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keepjogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2038B44F27ECD577002807D8 /* Keepjogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keepjogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2038B45227ECD577002807D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2038B45427ECD577002807D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2038B45927ECD577002807D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2038B45B27ECD578002807D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2038B45E27ECD578002807D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2038B46027ECD578002807D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2038B46527ECD578002807D8 /* KeepjoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepjoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2038B46927ECD578002807D8 /* InstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTests.swift; sourceTree = "<group>"; };
+		2038B46F27ECD578002807D8 /* KeepjoggingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepjoggingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2038B47327ECD578002807D8 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
+		2038B47527ECD578002807D8 /* InstagramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2038B48227ECDAE6002807D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2038B48427ECDAF4002807D8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2038B48627ECF255002807D8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2038B48827ECFF70002807D8 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		206105E627F41FE300C98D58 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		231DCE16D8DC22DA6B9464C6 /* Pods-Keepjogging-KeepjoggingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keepjogging-KeepjoggingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Keepjogging-KeepjoggingUITests/Pods-Keepjogging-KeepjoggingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2492843ED64A5339582CE543 /* Pods_Keepjogging_KeepjoggingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keepjogging_KeepjoggingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		261974F04A9C7931B2C42DED /* Pods-Keepjogging-KeepjoggingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keepjogging-KeepjoggingUITests.release.xcconfig"; path = "Target Support Files/Pods-Keepjogging-KeepjoggingUITests/Pods-Keepjogging-KeepjoggingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		28AB6830D7D55ED31B2BD837 /* Pods-Keepjogging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keepjogging.debug.xcconfig"; path = "Target Support Files/Pods-Keepjogging/Pods-Keepjogging.debug.xcconfig"; sourceTree = "<group>"; };
+		4512B1AC66BF0DCE44845762 /* Pods-KeepjoggingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepjoggingTests.release.xcconfig"; path = "Target Support Files/Pods-KeepjoggingTests/Pods-KeepjoggingTests.release.xcconfig"; sourceTree = "<group>"; };
+		671FEB598C594201A9C7D142 /* Pods_KeepjoggingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepjoggingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7563C400AEB5E9FBA92FB8 /* Pods-KeepjoggingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepjoggingTests.debug.xcconfig"; path = "Target Support Files/Pods-KeepjoggingTests/Pods-KeepjoggingTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2038B44C27ECD576002807D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4321F982F80FEDFD6E5937D /* Pods_Keepjogging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2038B46227ECD578002807D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9809DD42EB9F1E267EDC61 /* Pods_KeepjoggingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2038B46C27ECD578002807D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10252083019771A7E4E4A692 /* Pods_Keepjogging_KeepjoggingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2038B44627ECD576002807D8 = {
+			isa = PBXGroup;
+			children = (
+				2038B45127ECD577002807D8 /* Keepjogging */,
+				2038B46827ECD578002807D8 /* KeepjoggingTests */,
+				2038B47227ECD578002807D8 /* KeepjoggingUITests */,
+				2038B45027ECD577002807D8 /* Products */,
+				3633EAFA2CC5BEB363F5E1E8 /* Pods */,
+				A2FEC60952E03716275B302C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2038B45027ECD577002807D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2038B44F27ECD577002807D8 /* Keepjogging.app */,
+				2038B46527ECD578002807D8 /* KeepjoggingTests.xctest */,
+				2038B46F27ECD578002807D8 /* KeepjoggingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2038B45127ECD577002807D8 /* Keepjogging */ = {
+			isa = PBXGroup;
+			children = (
+				2038B45227ECD577002807D8 /* AppDelegate.swift */,
+				2038B45427ECD577002807D8 /* SceneDelegate.swift */,
+				2038B45827ECD577002807D8 /* Main.storyboard */,
+				2038B45B27ECD578002807D8 /* Assets.xcassets */,
+				2038B45D27ECD578002807D8 /* LaunchScreen.storyboard */,
+				2038B46027ECD578002807D8 /* Info.plist */,
+				2038B48227ECDAE6002807D8 /* LoginViewController.swift */,
+				2038B48427ECDAF4002807D8 /* FeedViewController.swift */,
+				2038B48627ECF255002807D8 /* CameraViewController.swift */,
+				2038B48827ECFF70002807D8 /* PostCell.swift */,
+				206105E627F41FE300C98D58 /* CommentCell.swift */,
+			);
+			path = Keepjogging;
+			sourceTree = "<group>";
+		};
+		2038B46827ECD578002807D8 /* KeepjoggingTests */ = {
+			isa = PBXGroup;
+			children = (
+				2038B46927ECD578002807D8 /* InstagramTests.swift */,
+			);
+			path = KeepjoggingTests;
+			sourceTree = "<group>";
+		};
+		2038B47227ECD578002807D8 /* KeepjoggingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2038B47327ECD578002807D8 /* InstagramUITests.swift */,
+				2038B47527ECD578002807D8 /* InstagramUITestsLaunchTests.swift */,
+			);
+			path = KeepjoggingUITests;
+			sourceTree = "<group>";
+		};
+		3633EAFA2CC5BEB363F5E1E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28AB6830D7D55ED31B2BD837 /* Pods-Keepjogging.debug.xcconfig */,
+				00C00EF57F169DB9483B3F39 /* Pods-Keepjogging.release.xcconfig */,
+				231DCE16D8DC22DA6B9464C6 /* Pods-Keepjogging-KeepjoggingUITests.debug.xcconfig */,
+				261974F04A9C7931B2C42DED /* Pods-Keepjogging-KeepjoggingUITests.release.xcconfig */,
+				EA7563C400AEB5E9FBA92FB8 /* Pods-KeepjoggingTests.debug.xcconfig */,
+				4512B1AC66BF0DCE44845762 /* Pods-KeepjoggingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2FEC60952E03716275B302C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13578D4059A27D32E8379B66 /* Pods_Keepjogging.framework */,
+				2492843ED64A5339582CE543 /* Pods_Keepjogging_KeepjoggingUITests.framework */,
+				671FEB598C594201A9C7D142 /* Pods_KeepjoggingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2038B44E27ECD576002807D8 /* Keepjogging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2038B47927ECD578002807D8 /* Build configuration list for PBXNativeTarget "Keepjogging" */;
+			buildPhases = (
+				F86B4C19CBDAFD89D01A2EB6 /* [CP] Check Pods Manifest.lock */,
+				2038B44B27ECD576002807D8 /* Sources */,
+				2038B44C27ECD576002807D8 /* Frameworks */,
+				2038B44D27ECD576002807D8 /* Resources */,
+				72D04C27ABF4A35C1E1753E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keepjogging;
+			productName = Instagram;
+			productReference = 2038B44F27ECD577002807D8 /* Keepjogging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2038B46427ECD578002807D8 /* KeepjoggingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2038B47C27ECD578002807D8 /* Build configuration list for PBXNativeTarget "KeepjoggingTests" */;
+			buildPhases = (
+				5F9823299572E514D22F443E /* [CP] Check Pods Manifest.lock */,
+				2038B46127ECD578002807D8 /* Sources */,
+				2038B46227ECD578002807D8 /* Frameworks */,
+				2038B46327ECD578002807D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2038B46727ECD578002807D8 /* PBXTargetDependency */,
+			);
+			name = KeepjoggingTests;
+			productName = InstagramTests;
+			productReference = 2038B46527ECD578002807D8 /* KeepjoggingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2038B46E27ECD578002807D8 /* KeepjoggingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2038B47F27ECD578002807D8 /* Build configuration list for PBXNativeTarget "KeepjoggingUITests" */;
+			buildPhases = (
+				EE257BA7E12EB40872EFCF9F /* [CP] Check Pods Manifest.lock */,
+				2038B46B27ECD578002807D8 /* Sources */,
+				2038B46C27ECD578002807D8 /* Frameworks */,
+				2038B46D27ECD578002807D8 /* Resources */,
+				090EBF7FCD34175B13FD022F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2038B47127ECD578002807D8 /* PBXTargetDependency */,
+			);
+			name = KeepjoggingUITests;
+			productName = InstagramUITests;
+			productReference = 2038B46F27ECD578002807D8 /* KeepjoggingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2038B44727ECD576002807D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2038B44E27ECD576002807D8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					2038B46427ECD578002807D8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2038B44E27ECD576002807D8;
+					};
+					2038B46E27ECD578002807D8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2038B44E27ECD576002807D8;
+					};
+				};
+			};
+			buildConfigurationList = 2038B44A27ECD576002807D8 /* Build configuration list for PBXProject "Keepjogging" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2038B44627ECD576002807D8;
+			productRefGroup = 2038B45027ECD577002807D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2038B44E27ECD576002807D8 /* Keepjogging */,
+				2038B46427ECD578002807D8 /* KeepjoggingTests */,
+				2038B46E27ECD578002807D8 /* KeepjoggingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2038B44D27ECD576002807D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2038B45F27ECD578002807D8 /* LaunchScreen.storyboard in Resources */,
+				2038B45C27ECD578002807D8 /* Assets.xcassets in Resources */,
+				2038B45A27ECD577002807D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2038B46327ECD578002807D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2038B46D27ECD578002807D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		090EBF7FCD34175B13FD022F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keepjogging-KeepjoggingUITests/Pods-Keepjogging-KeepjoggingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keepjogging-KeepjoggingUITests/Pods-Keepjogging-KeepjoggingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Keepjogging-KeepjoggingUITests/Pods-Keepjogging-KeepjoggingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F9823299572E514D22F443E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeepjoggingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72D04C27ABF4A35C1E1753E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keepjogging/Pods-Keepjogging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keepjogging/Pods-Keepjogging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Keepjogging/Pods-Keepjogging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE257BA7E12EB40872EFCF9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Keepjogging-KeepjoggingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86B4C19CBDAFD89D01A2EB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Keepjogging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2038B44B27ECD576002807D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2038B48327ECDAE6002807D8 /* LoginViewController.swift in Sources */,
+				2038B48727ECF255002807D8 /* CameraViewController.swift in Sources */,
+				2038B45327ECD577002807D8 /* AppDelegate.swift in Sources */,
+				2038B48527ECDAF4002807D8 /* FeedViewController.swift in Sources */,
+				2038B45527ECD577002807D8 /* SceneDelegate.swift in Sources */,
+				2038B48927ECFF70002807D8 /* PostCell.swift in Sources */,
+				206105E727F41FE300C98D58 /* CommentCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2038B46127ECD578002807D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2038B46A27ECD578002807D8 /* InstagramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2038B46B27ECD578002807D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2038B47427ECD578002807D8 /* InstagramUITests.swift in Sources */,
+				2038B47627ECD578002807D8 /* InstagramUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2038B46727ECD578002807D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2038B44E27ECD576002807D8 /* Keepjogging */;
+			targetProxy = 2038B46627ECD578002807D8 /* PBXContainerItemProxy */;
+		};
+		2038B47127ECD578002807D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2038B44E27ECD576002807D8 /* Keepjogging */;
+			targetProxy = 2038B47027ECD578002807D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2038B45827ECD577002807D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2038B45927ECD577002807D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2038B45D27ECD578002807D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2038B45E27ECD578002807D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2038B47727ECD578002807D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2038B47827ECD578002807D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2038B47A27ECD578002807D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AB6830D7D55ED31B2BD837 /* Pods-Keepjogging.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keepjogging/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ken-Ling.Keepjogging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2038B47B27ECD578002807D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C00EF57F169DB9483B3F39 /* Pods-Keepjogging.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keepjogging/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ken-Ling.Keepjogging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2038B47D27ECD578002807D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7563C400AEB5E9FBA92FB8 /* Pods-KeepjoggingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ken-Ling.InstagramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keepjogging.app/Keepjogging";
+			};
+			name = Debug;
+		};
+		2038B47E27ECD578002807D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4512B1AC66BF0DCE44845762 /* Pods-KeepjoggingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ken-Ling.InstagramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keepjogging.app/Keepjogging";
+			};
+			name = Release;
+		};
+		2038B48027ECD578002807D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231DCE16D8DC22DA6B9464C6 /* Pods-Keepjogging-KeepjoggingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ken-Ling.InstagramUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instagram;
+			};
+			name = Debug;
+		};
+		2038B48127ECD578002807D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 261974F04A9C7931B2C42DED /* Pods-Keepjogging-KeepjoggingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ken-Ling.InstagramUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instagram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2038B44A27ECD576002807D8 /* Build configuration list for PBXProject "Keepjogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2038B47727ECD578002807D8 /* Debug */,
+				2038B47827ECD578002807D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2038B47927ECD578002807D8 /* Build configuration list for PBXNativeTarget "Keepjogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2038B47A27ECD578002807D8 /* Debug */,
+				2038B47B27ECD578002807D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2038B47C27ECD578002807D8 /* Build configuration list for PBXNativeTarget "KeepjoggingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2038B47D27ECD578002807D8 /* Debug */,
+				2038B47E27ECD578002807D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2038B47F27ECD578002807D8 /* Build configuration list for PBXNativeTarget "KeepjoggingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2038B48027ECD578002807D8 /* Debug */,
+				2038B48127ECD578002807D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2038B44727ECD576002807D8 /* Project object */;
+}

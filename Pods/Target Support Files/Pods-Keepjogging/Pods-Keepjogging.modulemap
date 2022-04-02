@@ -1,0 +1,6 @@
+framework module Pods_Keepjogging {
+  umbrella header "Pods-Keepjogging-umbrella.h"
+
+  export *
+  module * { export * }
+}
