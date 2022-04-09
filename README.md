@@ -42,6 +42,7 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 
 **Progress Unit 7 Sprint1
 Here's a walkthrough of implemented user stories:**
+
 <img src='http://g.recordit.co/yEl3LZljTq.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### 2. Screen Archetypes
