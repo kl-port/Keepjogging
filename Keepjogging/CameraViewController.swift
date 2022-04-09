@@ -12,6 +12,7 @@ import Parse
 
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+   
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var commentField: UITextField!
@@ -34,7 +35,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         post.saveInBackground {(success, error) in
             if success{
-                self.dismiss(animated: true, completion: nil)
+                self.imageView.image = UIImage(named:"image_placeholder.png")
+                self.commentField.text = nil
+                self.tabBarController?.selectedIndex = 0
                 print("saved!")
             }else{
                 print("error!")
