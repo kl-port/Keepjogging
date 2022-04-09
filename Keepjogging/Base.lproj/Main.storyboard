@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Keepjogging" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
         <!--Feed View Controller-->
         <scene sceneID="CSr-Q5-9GZ">
             <objects>
-                <viewController id="WhF-Lt-RJ8" customClass="FeedViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WhF-Lt-RJ8" customClass="FeedViewController" customModule="Keepjogging" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q2B-7q-PzS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" tag="39" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="411" id="VyB-RL-17n" customClass="PostCell" customModule="Instagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" tag="39" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="411" id="VyB-RL-17n" customClass="PostCell" customModule="Keepjogging" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="411"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VyB-RL-17n" id="aNh-Go-sz9">
@@ -137,7 +137,7 @@
                                             <outlet property="usernameLabel" destination="bwY-2l-cMZ" id="yXp-zS-Dmd"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="0eX-PC-TX7" customClass="CommentCell" customModule="Instagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="0eX-PC-TX7" customClass="CommentCell" customModule="Keepjogging" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="455.5" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0eX-PC-TX7" id="Q5v-PD-aTH">
@@ -173,14 +173,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="MRc-WA-wtZ">
-                                        <rect key="frame" x="0.0" y="493" width="414" height="37"/>
+                                        <rect key="frame" x="0.0" y="493" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MRc-WA-wtZ" id="zeq-iQ-ivj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6z-wj-iFQ">
-                                                    <rect key="frame" x="16" y="8" width="390" height="21"/>
+                                                    <rect key="frame" x="16" y="8" width="390" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.40769974226804129" green="0.40769974226804129" blue="0.40769974226804129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -223,7 +223,7 @@
         <!--Camera View Controller-->
         <scene sceneID="3Fd-Hh-HvO">
             <objects>
-                <viewController id="Dyb-1G-O7C" customClass="CameraViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dyb-1G-O7C" customClass="CameraViewController" customModule="Keepjogging" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lIQ-Z4-XtT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,11 +269,11 @@
             </objects>
             <point key="canvasLocation" x="-310" y="3052"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="A9E-MF-gpg">
             <objects>
                 <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="7wz-UX-9DQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gWE-cw-MZu"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="feed_tab" id="gWE-cw-MZu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MYD-lV-Zsi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -289,25 +289,25 @@
             <point key="canvasLocation" x="-310" y="1623"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="ttJ-GR-bgk">
+        <scene sceneID="SbR-7g-slj">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="JdP-2I-7Sd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fiN-jL-y83">
+                <viewController id="0e7-va-0Sk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAA-ac-qgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="sc2-3w-JF3"/>
+                        <viewLayoutGuide key="safeArea" id="j0m-xO-GKf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mNO-XC-x99"/>
+                    <navigationItem key="navigationItem" id="jK8-cT-dFC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u7Q-RS-17J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfo-xo-ncu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466.6666666666667" y="1622.5446428571429"/>
+            <point key="canvasLocation" x="1356.521739130435" y="1658.7053571428571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Uwf-Mr-ref">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="tnI-ia-7TG" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeNavigationController" modalPresentationStyle="fullScreen" id="tnI-ia-7TG" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="7y1-OY-rrp"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a6g-tL-TU3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -315,35 +315,36 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="42E-vh-VCi" kind="relationship" relationship="viewControllers" id="ZNl-vj-WkR"/>
                         <segue destination="7wz-UX-9DQ" kind="relationship" relationship="viewControllers" id="lTa-4L-Ixn"/>
+                        <segue destination="wLk-8j-bOE" kind="relationship" relationship="viewControllers" id="H6Z-GE-Hae"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ReJ-8X-0d7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29" y="821"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="FkW-YC-PIY">
+        <!--Item-->
+        <scene sceneID="dBx-rK-luq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="42E-vh-VCi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="clP-Zi-at2"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wLk-8j-bOE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zFR-wX-hgS"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3YC-Kl-PpH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NTi-MK-C1K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="JdP-2I-7Sd" kind="relationship" relationship="rootViewController" id="Fxn-is-GR5"/>
+                        <segue destination="0e7-va-0Sk" kind="relationship" relationship="rootViewController" id="bGX-uZ-qht"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mh6-4L-jd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9P-fc-2Qe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="1623"/>
+            <point key="canvasLocation" x="461" y="1623"/>
         </scene>
     </scenes>
     <resources>
+        <image name="feed_tab" width="25" height="25"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="1096" height="430"/>
