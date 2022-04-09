@@ -27,10 +27,10 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 
 **Required Must-have Stories**
 
-* Sign up/ log in functions
-* Profiles for users
-* Post feed for all users
-* Comment and like for posts
+* Sign up/ log in functions  **[X] Unit7**
+* Profiles for users         [ ]
+* Post feed for all users    **[X] Unit7**
+* Comment and like for posts [ ]
 
 **Optional Nice-to-have Stories**
 
