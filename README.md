@@ -40,8 +40,9 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 * Filter: Top space, hot discussion.
 * Optional Shuffle Button (i.e. random space, etc)
 
-**Progress Unit 7 Sprint1
-Here's a walkthrough of implemented user stories:**
+**Progress Unit 7 Sprint1**
+
+**Here's a walkthrough of implemented user stories:**
 
 <img src='http://g.recordit.co/yEl3LZljTq.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
