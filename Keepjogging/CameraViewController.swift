@@ -28,6 +28,26 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         post["caption"] = commentField.text!
         post["author"] = PFUser.current()!
         
+        let query = PFQuery(className:"Posts")
+        query.whereKey("author", equalTo:post["author"])
+        query.countObjectsInBackground { (count: Int32, error: Error?) in
+            if let error = error {
+                // The request failed
+                print(error.localizedDescription)
+            } else {
+                let cnt = count + 1
+                post["countDays"] = cnt
+                post.saveInBackground { (success, error) in
+                    if success {
+                        print("days saved")
+                    } else {
+                        print("Error in saving days")
+                    }
+                }
+            }
+        }
+        
+        
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(name: "image.png", data: imageData!)
         post["image"] = file
