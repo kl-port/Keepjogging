@@ -5,7 +5,8 @@ import MessageInputBar
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate{
     
-
+    let refreshControl = UIRefreshControl()
+    
     @IBOutlet weak var tableView: UITableView!
     var posts = [PFObject]()
     let commentBar = MessageInputBar()
@@ -13,7 +14,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var selectedPost: PFObject!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // refresh
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+        
         commentBar.inputTextView.placeholder = "Add a comment..."
         commentBar.sendButton.title = "Post"
         commentBar.delegate = self
@@ -24,12 +30,29 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
+    @objc func refresh(_ sender: AnyObject) {
+       // Code to refresh table view
+        let query = PFQuery(className: "Posts")
+        query.includeKeys(["author", "comments", "comments.author"])
+        query.limit = 20
+        
+        query.findObjectsInBackground{ (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+        }
+        refreshControl.endRefreshing()
+    }
+    
+    
     @objc func keyboardWillBeHidden(note: Notification) {
         commentBar.inputTextView.text = nil
         showsCommentBar = false
         becomeFirstResponder()
         
     }
+    
     override var inputAccessoryView: UIView? {
         return commentBar
     }
@@ -116,6 +139,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let user = post["author"] as! PFUser
             cell.usernameLabel.text = user.username
             cell.captionLabel.text = post["caption"] as? String
+            // countDays
+            let cnt = post["countDays"]
+            cell.countDays.text =  "Day: \(cnt ?? 0)"
             
             let imageFile = post["image"] as! PFFileObject
             let urlString = imageFile.url

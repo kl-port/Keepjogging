@@ -44,6 +44,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var countDays: UILabel!
     override func viewDidAppear(_ animated: Bool) {
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -57,6 +58,22 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         let userId = PFUser.current()?.objectId as! String
         print(userId)
         textNameLabel.text = userName
+        
+        // days count
+        let post = PFObject(className: "Posts")
+        let query1 = PFQuery(className:"Posts")
+        query1.whereKey("author", equalTo: post["author"])
+        query1.countObjectsInBackground { (count: Int32, error: Error?) in
+            if let error = error {
+                // The request failed
+                print(error.localizedDescription)
+            } else {
+                let cnt = count + 1
+                print(cnt)
+                self.countDays.text =  "\(cnt) days"
+            }
+        }
+        
     
         let query = PFQuery(className: "Posts")
         query.whereKey("author", equalTo: PFUser.current()!)
