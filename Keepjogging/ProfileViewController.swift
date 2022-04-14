@@ -16,16 +16,17 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var textNameLabel: UILabel!
     @IBOutlet weak var textProgessLabel: UILabel!
     
+    
     var posts = [PFObject]()
     var user = PFUser.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        
+        //fetch profile image
         if user?["profileImage"] != nil {
             let file = (user!["profileImage"] as! PFFileObject)
             
@@ -39,7 +40,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
             }
         }
        
-        profileImageView.layer.cornerRadius = 100
+        profileImageView.layer.cornerRadius = 125
         profileImageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
@@ -47,42 +48,48 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var countDays: UILabel!
     override func viewDidAppear(_ animated: Bool) {
         
-        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.minimumLineSpacing = 2
+        let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = -5
         
-        let width = (view.frame.size.width - (-layout.minimumInteritemSpacing*2))/3
-        layout.itemSize = CGSize(width: width, height: width)
+        let width = (view.frame.size.width - (-3*layout.minimumInteritemSpacing))/3
+        layout.itemSize = CGSize(width: width, height: width*1.25)
         
+        // fetch user name
         let userName = PFUser.current()?.username!
-        let userId = PFUser.current()?.objectId as! String
+        let userId = PFUser.current()?.objectId
         print(userId)
         textNameLabel.text = userName
         
         // days count
         let post = PFObject(className: "Posts")
-        let query1 = PFQuery(className:"Posts")
-        query1.whereKey("author", equalTo: post["author"])
-        query1.countObjectsInBackground { (count: Int32, error: Error?) in
+        let queryDay = PFQuery(className:"Posts")
+        queryDay.whereKey("author", equalTo: post["author"] ?? 0)
+        queryDay.countObjectsInBackground { (count: Int32, error: Error?) in
             if let error = error {
                 // The request failed
                 print(error.localizedDescription)
             } else {
                 let cnt = count + 1
-                print(cnt)
-                self.countDays.text =  "\(cnt) days"
+                //print(cnt)
+                if cnt <= 1{
+                    self.countDays.text = "\(cnt) day"
+                }else{
+                    self.countDays.text =  "\(cnt) days"
+                }
             }
         }
         
     
         let query = PFQuery(className: "Posts")
+        query.order(byDescending: "createdAt");
         query.whereKey("author", equalTo: PFUser.current()!)
         query.limit = 20
         
         query.findObjectsInBackground{ (posts, error) in
             if posts != nil {
                 self.posts = posts!
-                self.collectionView.reloadData()
+                self.collectionView?.reloadData()
             }
         }
         //self.collectionView.reloadData()
@@ -104,12 +111,14 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
-        let size = CGSize(width:200,height:200 )
+        let size = CGSize(width:250,height:250 )
         let scaledImage = image.af.imageScaled(to: size)
         
+        //round profile image
         profileImageView.image = scaledImage
-        profileImageView.layer.cornerRadius = 100
+        profileImageView.layer.cornerRadius = 150
         profileImageView.clipsToBounds = true
+        //profileImageView.layer.masksToBounds = false
         
         dismiss(animated: true, completion: nil)
 
@@ -135,13 +144,17 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         let post = self.posts[indexPath.item]
 
-    
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostGridCell", for: indexPath) as! PostGridCell
         
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostGridCell", for: indexPath) as! PostGridCell
+        /*
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url
         let url = URL(string: urlString!)
         cell.PostView.af.setImage(withURL: url!)
+        cell.dayLabel.text = "2"*/
+        
+        cell.setup(with: post)
+        
         return cell
         }
     
