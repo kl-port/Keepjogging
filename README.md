@@ -27,10 +27,10 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 
 **Required Must-have Stories**
 
-* Sign up/ log in functions  **[X] Unit7**
-* Profiles for users         [ ]
-* Post feed for all users    **[X] Unit7**
-* Comment and like for posts [ ]
+* Sign up/ log in functions  [X] Unit7
+* Profiles for users         **[X] Unit 8**
+* Post feed for all users    [X] Unit7
+* Comment and like for posts **[X] Unit 8**
 
 **Optional Nice-to-have Stories**
 
@@ -40,11 +40,11 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 * Filter: Top space, hot discussion.
 * Optional Shuffle Button (i.e. random space, etc)
 
-**Progress Unit 7 Sprint1**
+**Progress Unit 8 Sprint1**
 
 **Here's a walkthrough of implemented user stories:**
 
-<img src='http://g.recordit.co/E2nuNSgspI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Please check the gif link, which is too long to show in the github repository: http://g.recordit.co/E2nuNSgspI.gif
 
 ### 2. Screen Archetypes
 
