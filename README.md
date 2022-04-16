@@ -28,9 +28,11 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 **Required Must-have Stories**
 
 * Sign up/ log in functions  [X] Unit7
-* Profiles for users         **[X] Unit 8**
 * Post feed for all users    [X] Unit7
-* Comment and like for posts **[X] Unit 8**
+* Profiles for users         **[X] Unit 8**
+* Comment for posts          **[X] Unit 8**
+* Count days of jogging      **[X] Unit 8**
+* Setting page               **[X] Unit 8**
 
 **Optional Nice-to-have Stories**
 
@@ -44,7 +46,8 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 
 **Here's a walkthrough of implemented user stories:**
 
-Please check the gif link, which is too long to show in the github repository: http://g.recordit.co/E2nuNSgspI.gif
+<img src='http://g.recordit.co/H5i7kL7wpp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 ### 2. Screen Archetypes
 
