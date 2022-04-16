@@ -24,6 +24,7 @@
 		2038B48927ECFF70002807D8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B48827ECFF70002807D8 /* PostCell.swift */; };
 		206105E727F41FE300C98D58 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206105E627F41FE300C98D58 /* CommentCell.swift */; };
 		2B9809DD42EB9F1E267EDC61 /* Pods_KeepjoggingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671FEB598C594201A9C7D142 /* Pods_KeepjoggingTests.framework */; };
+		94A2B4C5280A779A00D0D611 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2B4C4280A779A00D0D611 /* SettingsViewController.swift */; };
 		94CF7CCA28014BDF00DB0B71 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF7CC928014BDF00DB0B71 /* HomeViewController.swift */; };
 		B4321F982F80FEDFD6E5937D /* Pods_Keepjogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13578D4059A27D32E8379B66 /* Pods_Keepjogging.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		28AB6830D7D55ED31B2BD837 /* Pods-Keepjogging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keepjogging.debug.xcconfig"; path = "Target Support Files/Pods-Keepjogging/Pods-Keepjogging.debug.xcconfig"; sourceTree = "<group>"; };
 		4512B1AC66BF0DCE44845762 /* Pods-KeepjoggingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepjoggingTests.release.xcconfig"; path = "Target Support Files/Pods-KeepjoggingTests/Pods-KeepjoggingTests.release.xcconfig"; sourceTree = "<group>"; };
 		671FEB598C594201A9C7D142 /* Pods_KeepjoggingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepjoggingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A2B4C4280A779A00D0D611 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		94CF7CC928014BDF00DB0B71 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EA7563C400AEB5E9FBA92FB8 /* Pods-KeepjoggingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepjoggingTests.debug.xcconfig"; path = "Target Support Files/Pods-KeepjoggingTests/Pods-KeepjoggingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 			children = (
 				2038B45227ECD577002807D8 /* AppDelegate.swift */,
 				2038B45427ECD577002807D8 /* SceneDelegate.swift */,
+				94A2B4C4280A779A00D0D611 /* SettingsViewController.swift */,
 				2038B45827ECD577002807D8 /* Main.storyboard */,
 				2038B45B27ECD578002807D8 /* Assets.xcassets */,
 				2038B45D27ECD578002807D8 /* LaunchScreen.storyboard */,
@@ -429,6 +432,7 @@
 			files = (
 				2038B48327ECDAE6002807D8 /* LoginViewController.swift in Sources */,
 				2038B48727ECF255002807D8 /* CameraViewController.swift in Sources */,
+				94A2B4C5280A779A00D0D611 /* SettingsViewController.swift in Sources */,
 				2038B45327ECD577002807D8 /* AppDelegate.swift in Sources */,
 				94CF7CCA28014BDF00DB0B71 /* HomeViewController.swift in Sources */,
 				2038B48527ECDAF4002807D8 /* FeedViewController.swift in Sources */,
