@@ -58,28 +58,24 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         // fetch user name
         let userName = PFUser.current()?.username!
         let userId = PFUser.current()?.objectId
-        print(userId)
         textNameLabel.text = userName
         
         // days count
         let post = PFObject(className: "Posts")
         let queryDay = PFQuery(className:"Posts")
-        queryDay.whereKey("author", equalTo: post["author"] ?? 0)
+        queryDay.whereKey("author", containedIn: [userId])
         queryDay.countObjectsInBackground { (count: Int32, error: Error?) in
             if let error = error {
                 // The request failed
                 print(error.localizedDescription)
             } else {
-                let cnt = count + 1
-                //print(cnt)
-                if cnt <= 1{
-                    self.countDays.text = "\(cnt) day"
+                if count <= 1{
+                    self.countDays.text = "\(count) day"
                 }else{
-                    self.countDays.text =  "\(cnt) days"
+                    self.countDays.text =  "\(count) days"
                 }
             }
         }
-        
     
         let query = PFQuery(className: "Posts")
         query.order(byDescending: "createdAt");
