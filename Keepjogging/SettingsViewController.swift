@@ -9,12 +9,33 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    // lanagage change
+    @IBAction func changeLanguage(_ sender: UISegmentedControl) {
+     
+        switch sender.selectedSegmentIndex
+            {
+            case 0:
+            UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
+            UserDefaults.standard.synchronize()
+            case 1:
+            UserDefaults.standard.set(["zh-Hans"], forKey: "AppleLanguages")
+            UserDefaults.standard.synchronize()
+            default:
+                break
+            }
+            
+        let alert = UIAlertController(title: "Notice", message: "Please restart the app to change the language. 请重启应用来切换语言。", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+        NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
+
+
     }
-    
+    override func viewDidLoad() {
+
+
 
     /*
     // MARK: - Navigation
@@ -26,4 +47,5 @@ class SettingsViewController: UIViewController {
     }
     */
 
+}
 }

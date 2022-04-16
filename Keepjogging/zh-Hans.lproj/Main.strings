@@ -1,0 +1,105 @@
+
+/* Class = "UILabel"; text = "Notifications"; ObjectID = "4df-eb-LVh"; */
+"4df-eb-LVh.text" = "通知";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "4fC-hB-Gzy"; */
+"4fC-hB-Gzy.configuration.title" = "注册";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4fC-hB-Gzy"; */
+"4fC-hB-Gzy.normalTitle" = "Button";
+
+/* Class = "UICommand"; title = "English"; ObjectID = "7da-o9-Z9h"; */
+"7da-o9-Z9h.title" = "English";
+
+/* Class = "UILabel"; text = "User name:"; ObjectID = "8ji-Bc-Lqb"; */
+"8ji-Bc-Lqb.text" = "用户名:";
+
+/* Class = "UIButton"; configuration.title = "Submit"; ObjectID = "8ow-hK-lz0"; */
+"8ow-hK-lz0.configuration.title" = "提交";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8ow-hK-lz0"; */
+"8ow-hK-lz0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Add a comment ..."; ObjectID = "B6z-wj-iFQ"; */
+"B6z-wj-iFQ.text" = "添加评论 ...";
+
+/* Class = "UIMenu"; title = "Language"; ObjectID = "CA6-Q1-CI4"; */
+"CA6-Q1-CI4.title" = "语言";
+
+/* Class = "UITabBarItem"; title = "My Profile"; ObjectID = "CIx-YF-wW7"; */
+"CIx-YF-wW7.title" = "我";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "JFr-58-xqN"; */
+"JFr-58-xqN.text" = "设置";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "LcU-uo-t7O"; */
+"LcU-uo-t7O.title" = "登出";
+
+/* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "SXE-2M-WGR"; */
+"SXE-2M-WGR.configuration.title" = "登录";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SXE-2M-WGR"; */
+"SXE-2M-WGR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Sky-Gl-dwY"; */
+"Sky-Gl-dwY.text" = "0";
+
+/* Class = "UILabel"; text = "Ken"; ObjectID = "TRg-vf-9LX"; */
+"TRg-vf-9LX.text" = "Ken";
+
+/* Class = "UILabel"; text = "Wow, I love photos!"; ObjectID = "UKW-cS-izS"; */
+"UKW-cS-izS.text" = "Wow, I love photos!";
+
+/* Class = "UILabel"; text = "Ken "; ObjectID = "bwY-2l-cMZ"; */
+"bwY-2l-cMZ.text" = "Ken ";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "cHP-SV-sB9"; */
+"cHP-SV-sB9.text" = "用户名";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dnH-m9-DpD"; */
+"dnH-m9-DpD.text" = "Label";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "eQW-rd-tnc"; */
+"eQW-rd-tnc.text" = "密码";
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "fBI-33-3VW"; */
+"fBI-33-3VW.title" = "设置";
+
+/* Class = "UIButton"; normalTitle = "Language"; ObjectID = "ftK-n7-tjW"; */
+"ftK-n7-tjW.normalTitle" = "语言";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "gWE-cw-MZu"; */
+"gWE-cw-MZu.title" = "首页";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iB0-NV-XC3"; */
+"iB0-NV-XC3.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Delete Account"; ObjectID = "lu1-SL-GhS"; */
+"lu1-SL-GhS.configuration.title" = "删除账户";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lu1-SL-GhS"; */
+"lu1-SL-GhS.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Change Language"; ObjectID = "n20-2c-sZ7"; */
+"n20-2c-sZ7.text" = "改变语言";
+
+/* Class = "UICommand"; title = "Chinese"; ObjectID = "nkp-8p-SGI"; */
+"nkp-8p-SGI.title" = "中文";
+
+/* Class = "UILabel"; text = "This is a comment!"; ObjectID = "sMy-LP-E3J"; */
+"sMy-LP-E3J.text" = "This is a comment!";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ta4-Ea-WPV"; */
+"ta4-Ea-WPV.text" = "0";
+
+/* Class = "UILabel"; text = "Milestones:"; ObjectID = "wIn-0w-MXk"; */
+"wIn-0w-MXk.text" = "里程碑:";
+
+/* Class = "UITabBarItem"; title = "Post"; ObjectID = "zFR-wX-hgS"; */
+"zFR-wX-hgS.title" = "帖子";
+
+/* Class = "UISegmentedControl"; zxU-2v-skv.segmentTitles[0] = "On"; ObjectID = "zxU-2v-skv"; */
+"zxU-2v-skv.segmentTitles[0]" = "开";
+
+/* Class = "UISegmentedControl"; zxU-2v-skv.segmentTitles[1] = "Off"; ObjectID = "zxU-2v-skv"; */
+"zxU-2v-skv.segmentTitles[1]" = "关";

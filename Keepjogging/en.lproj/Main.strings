@@ -1,0 +1,99 @@
+
+/* Class = "UILabel"; text = "Notifications"; ObjectID = "4df-eb-LVh"; */
+"4df-eb-LVh.text" = "Notifications";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "4fC-hB-Gzy"; */
+"4fC-hB-Gzy.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4fC-hB-Gzy"; */
+"4fC-hB-Gzy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "User name:"; ObjectID = "8ji-Bc-Lqb"; */
+"8ji-Bc-Lqb.text" = "User name:";
+
+/* Class = "UIButton"; configuration.title = "Submit"; ObjectID = "8ow-hK-lz0"; */
+"8ow-hK-lz0.configuration.title" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8ow-hK-lz0"; */
+"8ow-hK-lz0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Add a comment ..."; ObjectID = "B6z-wj-iFQ"; */
+"B6z-wj-iFQ.text" = "Add a comment ...";
+
+/* Class = "UISegmentedControl"; CEu-u4-Vow.segmentTitles[0] = "English"; ObjectID = "CEu-u4-Vow"; */
+"CEu-u4-Vow.segmentTitles[0]" = "English";
+
+/* Class = "UISegmentedControl"; CEu-u4-Vow.segmentTitles[1] = "Chinese"; ObjectID = "CEu-u4-Vow"; */
+"CEu-u4-Vow.segmentTitles[1]" = "Chinese";
+
+/* Class = "UITabBarItem"; title = "My Profile"; ObjectID = "CIx-YF-wW7"; */
+"CIx-YF-wW7.title" = "My Profile";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "JFr-58-xqN"; */
+"JFr-58-xqN.text" = "Settings";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "LcU-uo-t7O"; */
+"LcU-uo-t7O.title" = "Logout";
+
+/* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "SXE-2M-WGR"; */
+"SXE-2M-WGR.configuration.title" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SXE-2M-WGR"; */
+"SXE-2M-WGR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Sky-Gl-dwY"; */
+"Sky-Gl-dwY.text" = "0";
+
+/* Class = "UILabel"; text = "Ken"; ObjectID = "TRg-vf-9LX"; */
+"TRg-vf-9LX.text" = "Ken";
+
+/* Class = "UILabel"; text = "Wow, I love photos!"; ObjectID = "UKW-cS-izS"; */
+"UKW-cS-izS.text" = "Wow, I love photos!";
+
+/* Class = "UILabel"; text = "Ken "; ObjectID = "bwY-2l-cMZ"; */
+"bwY-2l-cMZ.text" = "Ken ";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "cHP-SV-sB9"; */
+"cHP-SV-sB9.text" = "Username";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dnH-m9-DpD"; */
+"dnH-m9-DpD.text" = "Label";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "eQW-rd-tnc"; */
+"eQW-rd-tnc.text" = "Password";
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "fBI-33-3VW"; */
+"fBI-33-3VW.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "gWE-cw-MZu"; */
+"gWE-cw-MZu.title" = "Home";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iB0-NV-XC3"; */
+"iB0-NV-XC3.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Delete Account"; ObjectID = "lu1-SL-GhS"; */
+"lu1-SL-GhS.configuration.title" = "Delete Account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lu1-SL-GhS"; */
+"lu1-SL-GhS.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Change Language"; ObjectID = "n20-2c-sZ7"; */
+"n20-2c-sZ7.text" = "Change Language";
+
+/* Class = "UILabel"; text = "This is a comment!"; ObjectID = "sMy-LP-E3J"; */
+"sMy-LP-E3J.text" = "This is a comment!";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ta4-Ea-WPV"; */
+"ta4-Ea-WPV.text" = "0";
+
+/* Class = "UILabel"; text = "Milestones:"; ObjectID = "wIn-0w-MXk"; */
+"wIn-0w-MXk.text" = "Milestones:";
+
+/* Class = "UITabBarItem"; title = "Post"; ObjectID = "zFR-wX-hgS"; */
+"zFR-wX-hgS.title" = "Post";
+
+/* Class = "UISegmentedControl"; zxU-2v-skv.segmentTitles[0] = "On"; ObjectID = "zxU-2v-skv"; */
+"zxU-2v-skv.segmentTitles[0]" = "On";
+
+/* Class = "UISegmentedControl"; zxU-2v-skv.segmentTitles[1] = "Off"; ObjectID = "zxU-2v-skv"; */
+"zxU-2v-skv.segmentTitles[1]" = "Off";
