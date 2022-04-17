@@ -29,6 +29,7 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
                 print("Error: \(error?.localizedDescription)")
+                self.displayLoginError(error: error!)
             }
         }
     }
@@ -43,8 +44,27 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else{
                 print("Error: \(error?.localizedDescription)")
+                self.displaySignupError(error: error!)
             }
         }
+    }
+    
+    private func displayLoginError(error: Error) {
+      let title = "Login Error"
+      let message = "Oops! Something went wrong while logging in: \(error.localizedDescription)"
+      let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+      let OKAction = UIAlertAction(title: "OK", style: .default)
+      alertController.addAction(OKAction)
+      present(alertController, animated: true)
+    }
+    
+    private func displaySignupError(error: Error) {
+      let title = "Sign up error"
+      let message = "Oops! Something went wrong while signing up: \(error.localizedDescription)"
+      let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+      let OKAction = UIAlertAction(title: "OK", style: .default)
+      alertController.addAction(OKAction)
+      present(alertController, animated: true)
     }
     
     /*
