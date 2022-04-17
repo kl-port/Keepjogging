@@ -40,7 +40,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
             }
         }
        
-        profileImageView.layer.cornerRadius = 125
+        profileImageView.layer.cornerRadius = 100
         profileImageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
@@ -107,13 +107,13 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
-        let size = CGSize(width:250,height:250 )
-        let scaledImage = image.af.imageScaled(to: size)
+        //let size = CGSize(width:200,height:250 )
+        //let scaledImage = image.af.imageScaled(to: size)
         
         //round profile image
-        profileImageView.image = scaledImage
-        profileImageView.layer.cornerRadius = 150
-        profileImageView.clipsToBounds = true
+        //profileImageView.image = scaledImage
+        //profileImageView.layer.cornerRadius = 150
+        //profileImageView.clipsToBounds = true
         //profileImageView.layer.masksToBounds = false
         
         dismiss(animated: true, completion: nil)
