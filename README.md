@@ -32,8 +32,8 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 * Profiles for users                             [X] Unit 8
 * Comment for posts                              [X] Unit 8
 * Count days of jogging                          [X] Unit 8
-* Setting page - language toggle bar             **[X] Unit 9**
-* Community page - map                           **[X] Unit 9**
+* Setting page - language toggle bar  - Chinese/ English version            **[X] Unit 9**
+* Community page - map                                                      **[X] Unit 9**
 
 **Optional Nice-to-have Stories**
 
