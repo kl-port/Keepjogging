@@ -27,12 +27,13 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 
 **Required Must-have Stories**
 
-* Sign up/ log in functions  [X] Unit7
-* Post feed for all users    [X] Unit7
-* Profiles for users         **[X] Unit 8**
-* Comment for posts          **[X] Unit 8**
-* Count days of jogging      **[X] Unit 8**
-* Setting page               **[X] Unit 8**
+* Sign up/ log in functions                      [X] Unit7
+* Post feed for all users                        [X] Unit7
+* Profiles for users                             [X] Unit 8
+* Comment for posts                              [X] Unit 8
+* Count days of jogging                          [X] Unit 8
+* Setting page - language toggle bar             **[X] Unit 9**
+* Community page - map                           **[X] Unit 9**
 
 **Optional Nice-to-have Stories**
 
@@ -42,7 +43,7 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 * Filter: Top space, hot discussion.
 * Optional Shuffle Button (i.e. random space, etc)
 
-**Progress Unit 8 Sprint 2**
+**Progress Unit 9 Sprint 2**
 
 **Here's a walkthrough of implemented user stories:**
 
