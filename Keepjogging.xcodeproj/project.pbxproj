@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10252083019771A7E4E4A692 /* Pods_Keepjogging_KeepjoggingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2492843ED64A5339582CE543 /* Pods_Keepjogging_KeepjoggingUITests.framework */; };
+		1C53B946280CA22A00DE6803 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53B945280CA22A00DE6803 /* MapViewController.swift */; };
 		1C88650028031B71007E6C90 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8864FF28031B71007E6C90 /* ProfileViewController.swift */; };
 		1C88650228031BA4007E6C90 /* PostGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88650128031BA4007E6C90 /* PostGridCell.swift */; };
 		2038B45327ECD577002807D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038B45227ECD577002807D8 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		00C00EF57F169DB9483B3F39 /* Pods-Keepjogging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keepjogging.release.xcconfig"; path = "Target Support Files/Pods-Keepjogging/Pods-Keepjogging.release.xcconfig"; sourceTree = "<group>"; };
 		13578D4059A27D32E8379B66 /* Pods_Keepjogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keepjogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C53B945280CA22A00DE6803 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1C8864FF28031B71007E6C90 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1C88650128031BA4007E6C90 /* PostGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridCell.swift; sourceTree = "<group>"; };
 		2038B44F27ECD577002807D8 /* Keepjogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keepjogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +156,7 @@
 				1C8864FF28031B71007E6C90 /* ProfileViewController.swift */,
 				1C88650128031BA4007E6C90 /* PostGridCell.swift */,
 				20D3D27E280B458700BB84A4 /* Localizable.strings */,
+				1C53B945280CA22A00DE6803 /* MapViewController.swift */,
 			);
 			path = Keepjogging;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				94CF7CCA28014BDF00DB0B71 /* HomeViewController.swift in Sources */,
 				2038B48527ECDAF4002807D8 /* FeedViewController.swift in Sources */,
 				2038B45527ECD577002807D8 /* SceneDelegate.swift in Sources */,
+				1C53B946280CA22A00DE6803 /* MapViewController.swift in Sources */,
 				1C88650028031B71007E6C90 /* ProfileViewController.swift in Sources */,
 				1C88650228031BA4007E6C90 /* PostGridCell.swift in Sources */,
 				2038B48927ECFF70002807D8 /* PostCell.swift in Sources */,

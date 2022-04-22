@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="79.6875"/>
+            <point key="canvasLocation" x="29" y="82"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="CSr-Q5-9GZ">
@@ -207,14 +207,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="MRc-WA-wtZ">
-                                        <rect key="frame" x="0.0" y="499.99999809265137" width="414" height="37.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="499.99999809265137" width="414" height="36.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MRc-WA-wtZ" id="zeq-iQ-ivj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="36.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6z-wj-iFQ">
-                                                    <rect key="frame" x="16" y="8.0000000000000018" width="390" height="21.666666666666671"/>
+                                                    <rect key="frame" x="16" y="8.0000000000000018" width="390" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.40769974226804129" green="0.40769974226804129" blue="0.40769974226804129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -247,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAX-M8-qgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-455.07246376811599" y="2278.7946428571427"/>
+            <point key="canvasLocation" x="-1707" y="2308"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="3Fd-Hh-HvO">
@@ -303,7 +303,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="564" y="2279"/>
+            <point key="canvasLocation" x="-536" y="2308"/>
         </scene>
         <!--Home-->
         <scene sceneID="A9E-MF-gpg">
@@ -322,7 +322,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGz-Ss-gR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-454" y="1554"/>
+            <point key="canvasLocation" x="-1707" y="1554"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Uwf-Mr-ref">
@@ -338,6 +338,7 @@
                         <segue destination="7wz-UX-9DQ" kind="relationship" relationship="viewControllers" id="lTa-4L-Ixn"/>
                         <segue destination="wLk-8j-bOE" kind="relationship" relationship="viewControllers" id="H6Z-GE-Hae"/>
                         <segue destination="zRr-eO-cBK" kind="relationship" relationship="viewControllers" id="qu1-Fo-hZd"/>
+                        <segue destination="SxP-kM-eb9" kind="relationship" relationship="viewControllers" id="LxV-VA-Mxw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ReJ-8X-0d7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -361,7 +362,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9P-fc-2Qe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="1554"/>
+            <point key="canvasLocation" x="-536" y="1574"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="XYo-Fy-b3Z">
@@ -380,7 +381,54 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sr-9Y-ocI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="1574"/>
+            <point key="canvasLocation" x="583" y="1554"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="TRU-RW-Qnp">
+            <objects>
+                <viewController id="57t-cx-vTW" customClass="MapViewController" customModule="Keepjogging" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oxI-WA-KlE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tae-pS-dpo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1fk-mZ-bjd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1fk-mZ-bjd" firstAttribute="trailing" secondItem="Tae-pS-dpo" secondAttribute="trailing" id="3ZN-Aa-6Cl"/>
+                            <constraint firstItem="1fk-mZ-bjd" firstAttribute="bottom" secondItem="Tae-pS-dpo" secondAttribute="bottom" id="Cp1-sn-XQW"/>
+                            <constraint firstItem="Tae-pS-dpo" firstAttribute="top" secondItem="1fk-mZ-bjd" secondAttribute="top" id="dnm-Kt-CQl"/>
+                            <constraint firstItem="Tae-pS-dpo" firstAttribute="leading" secondItem="1fk-mZ-bjd" secondAttribute="leading" id="nRM-yB-pjl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="he3-cj-8Ly"/>
+                    <connections>
+                        <outlet property="mapView" destination="Tae-pS-dpo" id="NrN-2D-KSw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5AY-dE-BtH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="2282"/>
+        </scene>
+        <!--Community-->
+        <scene sceneID="EzR-pa-Mcn">
+            <objects>
+                <navigationController id="SxP-kM-eb9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Community" image="globe.europe.africa.fill" catalog="system" id="BRP-6Q-NpV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Upv-Xz-YMi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="57t-cx-vTW" kind="relationship" relationship="rootViewController" id="2Wl-vs-hPI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7g3-1L-Hke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="1554"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="21p-yz-UaR">
@@ -510,7 +558,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1592.753623188406" y="2290.8482142857142"/>
+            <point key="canvasLocation" x="583" y="2308"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="v99-qe-PoQ">
@@ -594,11 +642,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqq-63-sfl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.753623188406" y="2968.5267857142858"/>
+            <point key="canvasLocation" x="583" y="3072"/>
         </scene>
     </scenes>
     <resources>
         <image name="feed_tab" width="25" height="25"/>
+        <image name="globe.europe.africa.fill" catalog="system" width="128" height="121"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="instagram_logo" width="1096" height="430"/>
         <image name="plus.square.dashed" catalog="system" width="128" height="114"/>

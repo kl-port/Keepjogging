@@ -61,8 +61,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         textNameLabel.text = userName
         
         // days count
-        let post = PFObject(className: "Posts")
-        let queryDay = PFQuery(className:"Posts")
+        let queryDay = PFQuery(className:"Post")
         queryDay.whereKey("author", containedIn: [userId])
         queryDay.countObjectsInBackground { (count: Int32, error: Error?) in
             if let error = error {
@@ -77,7 +76,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
             }
         }
     
-        let query = PFQuery(className: "Posts")
+        let query = PFQuery(className: "Post")
         query.order(byDescending: "createdAt");
         query.whereKey("author", equalTo: PFUser.current()!)
         query.limit = 20
@@ -107,14 +106,14 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
-        //let size = CGSize(width:200,height:250 )
-        //let scaledImage = image.af.imageScaled(to: size)
+        let size = CGSize(width:200,height:200 )
+        let scaledImage = image.af.imageScaled(to: size)
         
         //round profile image
-        //profileImageView.image = scaledImage
-        //profileImageView.layer.cornerRadius = 150
-        //profileImageView.clipsToBounds = true
-        //profileImageView.layer.masksToBounds = false
+        profileImageView.image = scaledImage
+        profileImageView.layer.cornerRadius = 100
+        profileImageView.clipsToBounds = true
+       //profileImageView.layer.masksToBounds = false
         
         dismiss(animated: true, completion: nil)
 

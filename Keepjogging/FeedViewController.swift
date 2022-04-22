@@ -9,6 +9,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     var posts = [PFObject]()
+    var users = [PFObject]()
     let commentBar = MessageInputBar()
     var showsCommentBar = false
     var selectedPost: PFObject!
@@ -32,7 +33,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     @objc func refresh(_ sender: AnyObject) {
        // Code to refresh table view
-        let query = PFQuery(className: "Posts")
+        let query = PFQuery(className: "Post")
         query.includeKeys(["author", "comments", "comments.author"])
         query.limit = 20
         
@@ -74,13 +75,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let query = PFQuery(className: "Posts")
+        let query = PFQuery(className: "Post")
         query.includeKeys(["author", "comments", "comments.author"])
         query.order(byDescending: "createdAt")
         query.limit = 20
         
         query.findObjectsInBackground{ (posts, error) in
             if posts != nil {
+                //print(posts)
                 self.posts = posts!
                 self.tableView.reloadData()
             }
@@ -100,7 +102,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         // Create a comment
-        let comment = PFObject(className: "Comments")
+        let comment = PFObject(className: "Comment")
         comment["text"] = text
         comment["post"] = selectedPost
         comment["author"] = PFUser.current()!

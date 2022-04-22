@@ -23,12 +23,12 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func onSubmitButton(_ sender: Any) {
-        let post = PFObject(className: "Posts")
+        let post = PFObject(className: "Post")
         
         post["caption"] = commentField.text!
         post["author"] = PFUser.current()!
         
-        let query = PFQuery(className:"Posts")
+        let query = PFQuery(className:"Post")
         query.whereKey("author", equalTo:post["author"])
         query.countObjectsInBackground { (count: Int32, error: Error?) in
             if let error = error {
