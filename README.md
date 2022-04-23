@@ -48,7 +48,7 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 **Here's a walkthrough of implemented user stories:**
 
 
-[![Watch the youtube demo here](https://img.youtube.com/vi/watch?v=-CiLMyYU3zw/default.jpg)](https://www.youtube.com/watch?v=-CiLMyYU3zw)
+[![Watch the youtube demo here](https://imgur.com/a/xZlcEKj)](https://www.youtube.com/watch?v=-CiLMyYU3zw)
 
 
 
