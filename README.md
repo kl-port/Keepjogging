@@ -47,7 +47,10 @@ Start jogging now! Post and share your jogging pictures with the same group of u
 
 **Here's a walkthrough of implemented user stories:**
 
-<img src='http://g.recordit.co/pysQi7E3o0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/watch?v=-CiLMyYU3zw/0.jpg)](https://www.youtube.com/watch?v=-CiLMyYU3zw)
+
+
 
 
 ### 2. Screen Archetypes
