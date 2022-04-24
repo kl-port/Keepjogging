@@ -1,6 +1,3 @@
-
-===
-
 # Keepjogging
 
 
@@ -16,7 +13,7 @@
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
+
 <img src="https://i.imgur.com/dhzd1e7.jpg" width=600>
 
 
